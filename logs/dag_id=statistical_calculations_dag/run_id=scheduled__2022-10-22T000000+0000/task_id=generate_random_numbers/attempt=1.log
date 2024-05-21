@@ -1,0 +1,20 @@
+[2024-05-21T14:39:24.686+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-21T14:39:24.717+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: statistical_calculations_dag.generate_random_numbers scheduled__2022-10-22T00:00:00+00:00 [queued]>
+[2024-05-21T14:39:24.729+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: statistical_calculations_dag.generate_random_numbers scheduled__2022-10-22T00:00:00+00:00 [queued]>
+[2024-05-21T14:39:24.730+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-21T14:39:24.753+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_random_numbers> on 2022-10-22 00:00:00+00:00
+[2024-05-21T14:39:24.760+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=7937) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-21T14:39:24.761+0000] {standard_task_runner.py:63} INFO - Started process 7948 to run task
+[2024-05-21T14:39:24.762+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'statistical_calculations_dag', 'generate_random_numbers', 'scheduled__2022-10-22T00:00:00+00:00', '--job-id', '2635', '--raw', '--subdir', 'DAGS_FOLDER/second_dag.py', '--cfg-path', '/tmp/tmpro0sjwv_']
+[2024-05-21T14:39:24.764+0000] {standard_task_runner.py:91} INFO - Job 2635: Subtask generate_random_numbers
+[2024-05-21T14:39:24.825+0000] {task_command.py:426} INFO - Running <TaskInstance: statistical_calculations_dag.generate_random_numbers scheduled__2022-10-22T00:00:00+00:00 [running]> on host c420abfdc210
+[2024-05-21T14:39:24.939+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='test' AIRFLOW_CTX_DAG_ID='statistical_calculations_dag' AIRFLOW_CTX_TASK_ID='generate_random_numbers' AIRFLOW_CTX_EXECUTION_DATE='2022-10-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-22T00:00:00+00:00'
+[2024-05-21T14:39:24.940+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-21T14:39:24.978+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-21T14:39:24.982+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-21T14:39:24.993+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=statistical_calculations_dag, task_id=generate_random_numbers, run_id=scheduled__2022-10-22T00:00:00+00:00, execution_date=20221022T000000, start_date=20240521T143924, end_date=20240521T143924
+[2024-05-21T14:39:25.056+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-21T14:39:25.089+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-21T14:39:25.094+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

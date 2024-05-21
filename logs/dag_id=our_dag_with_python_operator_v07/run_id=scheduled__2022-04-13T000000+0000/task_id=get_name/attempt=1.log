@@ -1,0 +1,20 @@
+[2024-05-21T14:31:44.187+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-21T14:31:44.218+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: our_dag_with_python_operator_v07.get_name scheduled__2022-04-13T00:00:00+00:00 [queued]>
+[2024-05-21T14:31:44.230+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: our_dag_with_python_operator_v07.get_name scheduled__2022-04-13T00:00:00+00:00 [queued]>
+[2024-05-21T14:31:44.232+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-21T14:31:44.254+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_name> on 2022-04-13 00:00:00+00:00
+[2024-05-21T14:31:44.263+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3692) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-21T14:31:44.265+0000] {standard_task_runner.py:63} INFO - Started process 3702 to run task
+[2024-05-21T14:31:44.266+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'our_dag_with_python_operator_v07', 'get_name', 'scheduled__2022-04-13T00:00:00+00:00', '--job-id', '578', '--raw', '--subdir', 'DAGS_FOLDER/second_dag.py', '--cfg-path', '/tmp/tmpeee4np_a']
+[2024-05-21T14:31:44.268+0000] {standard_task_runner.py:91} INFO - Job 578: Subtask get_name
+[2024-05-21T14:31:44.324+0000] {task_command.py:426} INFO - Running <TaskInstance: our_dag_with_python_operator_v07.get_name scheduled__2022-04-13T00:00:00+00:00 [running]> on host c420abfdc210
+[2024-05-21T14:31:44.445+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='test' AIRFLOW_CTX_DAG_ID='our_dag_with_python_operator_v07' AIRFLOW_CTX_TASK_ID='get_name' AIRFLOW_CTX_EXECUTION_DATE='2022-04-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-04-13T00:00:00+00:00'
+[2024-05-21T14:31:44.447+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-21T14:31:44.491+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-21T14:31:44.492+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-21T14:31:44.503+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=our_dag_with_python_operator_v07, task_id=get_name, run_id=scheduled__2022-04-13T00:00:00+00:00, execution_date=20220413T000000, start_date=20240521T143144, end_date=20240521T143144
+[2024-05-21T14:31:44.560+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-21T14:31:44.581+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-21T14:31:44.584+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
