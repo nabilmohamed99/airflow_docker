@@ -1,0 +1,51 @@
+[2024-05-27T14:30:03.688+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-27T14:30:03.713+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v03.insert_into_table manual__2024-05-27T14:19:58.840083+00:00 [queued]>
+[2024-05-27T14:30:03.723+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v03.insert_into_table manual__2024-05-27T14:19:58.840083+00:00 [queued]>
+[2024-05-27T14:30:03.724+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 6
+[2024-05-27T14:30:03.738+0000] {taskinstance.py:2330} INFO - Executing <Task(PostgresOperator): insert_into_table> on 2024-05-27 14:19:58.840083+00:00
+[2024-05-27T14:30:03.744+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=685) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-27T14:30:03.745+0000] {standard_task_runner.py:63} INFO - Started process 686 to run task
+[2024-05-27T14:30:03.745+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_with_postgres_operator_v03', 'insert_into_table', 'manual__2024-05-27T14:19:58.840083+00:00', '--job-id', '148', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_postgres_operator.py', '--cfg-path', '/tmp/tmpcdltit_g']
+[2024-05-27T14:30:03.747+0000] {standard_task_runner.py:91} INFO - Job 148: Subtask insert_into_table
+[2024-05-27T14:30:03.788+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_with_postgres_operator_v03.insert_into_table manual__2024-05-27T14:19:58.840083+00:00 [running]> on host d44ae21ae39e
+[2024-05-27T14:30:03.868+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='test' AIRFLOW_CTX_DAG_ID='dag_with_postgres_operator_v03' AIRFLOW_CTX_TASK_ID='insert_into_table' AIRFLOW_CTX_EXECUTION_DATE='2024-05-27T14:19:58.840083+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-27T14:19:58.840083+00:00'
+[2024-05-27T14:30:03.869+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-27T14:30:03.880+0000] {sql.py:276} INFO - Executing: 
+            insert into dag_runs (dt, dag_id) values ('2024-05-27', 'test')
+        
+[2024-05-27T14:30:03.888+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-05-27T14:30:03.896+0000] {base.py:84} INFO - Using connection ID 'postgres_localhost' for task execution.
+[2024-05-27T14:30:03.905+0000] {sql.py:470} INFO - Running statement: 
+            insert into dag_runs (dt, dag_id) values ('2024-05-27', 'test')
+        , parameters: None
+[2024-05-27T14:30:03.909+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-27T14:30:03.910+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 282, in execute
+    output = hook.run(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 418, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 475, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "dag_runs_pkey"
+DETAIL:  Key (dt, dag_id)=(2024-05-27, test) already exists.
+
+[2024-05-27T14:30:03.917+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_with_postgres_operator_v03, task_id=insert_into_table, run_id=manual__2024-05-27T14:19:58.840083+00:00, execution_date=20240527T141958, start_date=20240527T143003, end_date=20240527T143003
+[2024-05-27T14:30:03.928+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 148 for task insert_into_table (duplicate key value violates unique constraint "dag_runs_pkey"
+DETAIL:  Key (dt, dag_id)=(2024-05-27, test) already exists.
+; 686)
+[2024-05-27T14:30:03.960+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-27T14:30:03.976+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-27T14:30:03.980+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
