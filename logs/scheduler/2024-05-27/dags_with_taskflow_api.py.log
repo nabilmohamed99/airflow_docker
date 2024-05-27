@@ -1,0 +1,253 @@
+[2024-05-27T10:22:39.251+0000] {processor.py:161} INFO - Started process (PID=43) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:22:39.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:22:39.255+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:22:39.255+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:22:39.281+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:22:39.289+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:22:39.511+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:22:39.511+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:taskflow_demo_v1
+[2024-05-27T10:22:39.524+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:22:39.524+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:taskflow_demo_v1
+[2024-05-27T10:22:39.532+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:22:39.532+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:taskflow_demo_v1
+[2024-05-27T10:22:39.533+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:22:39.533+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:22:39.546+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:22:39.546+0000] {dag.py:3118} INFO - Creating ORM DAG for taskflow_demo_v1
+[2024-05-27T10:22:39.557+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:22:39.556+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:22:39.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.331 seconds
+[2024-05-27T10:23:09.837+0000] {processor.py:161} INFO - Started process (PID=52) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:23:09.838+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:23:09.840+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:23:09.840+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:23:09.863+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:23:09.869+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:23:09.909+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:23:09.909+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:23:09.938+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:23:09.938+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:23:09.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.132 seconds
+[2024-05-27T10:23:40.216+0000] {processor.py:161} INFO - Started process (PID=65) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:23:40.217+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:23:40.221+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:23:40.220+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:23:40.236+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:23:40.239+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:23:40.260+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:23:40.259+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:23:40.276+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:23:40.276+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:23:40.295+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.084 seconds
+[2024-05-27T10:24:10.566+0000] {processor.py:161} INFO - Started process (PID=74) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:24:10.567+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:24:10.569+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:24:10.569+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:24:10.583+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:24:10.586+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:24:10.608+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:24:10.607+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:24:10.625+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:24:10.625+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:24:10.646+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.084 seconds
+[2024-05-27T10:24:40.925+0000] {processor.py:161} INFO - Started process (PID=83) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:24:40.926+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:24:40.928+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:24:40.928+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:24:40.944+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:24:40.947+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:24:40.967+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:24:40.966+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:24:40.984+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:24:40.984+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:24:41.004+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.084 seconds
+[2024-05-27T10:25:11.275+0000] {processor.py:161} INFO - Started process (PID=92) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:11.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:25:11.278+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:11.278+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:11.295+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:25:11.299+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:11.321+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:11.321+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:25:11.341+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:11.341+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:25:11.363+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.095 seconds
+[2024-05-27T10:25:41.640+0000] {processor.py:161} INFO - Started process (PID=101) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:41.641+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:25:41.643+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:41.643+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:41.661+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:25:41.665+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:41.687+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:41.687+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:25:41.709+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:41.709+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:25:41.730+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.094 seconds
+[2024-05-27T10:25:54.853+0000] {processor.py:161} INFO - Started process (PID=110) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:54.854+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:25:54.855+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:54.855+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:54.870+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:54.869+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dags_with_taskflow_api.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags_with_taskflow_api.py", line 10
+    @dag(dag_id="taskflow_demo_v1",default_args=default_args,start_date=datetime(2024,5,27),schedule_interval='@daily' #)
+        ^
+SyntaxError: '(' was never closed
+[2024-05-27T10:25:54.871+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:54.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.040 seconds
+[2024-05-27T10:25:57.885+0000] {processor.py:161} INFO - Started process (PID=111) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:57.886+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:25:57.888+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:57.887+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:57.913+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:25:57.917+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:57.938+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:57.938+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:25:57.955+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:57.955+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:25:57.985+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.106 seconds
+[2024-05-27T10:25:59.952+0000] {processor.py:161} INFO - Started process (PID=112) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:59.954+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:25:59.956+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:25:59.955+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:25:59.985+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:25:59.988+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:26:00.009+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:26:00.009+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:26:00.029+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:26:00.029+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:26:00.052+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.105 seconds
+[2024-05-27T10:26:04.072+0000] {processor.py:161} INFO - Started process (PID=113) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:26:04.073+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:26:04.076+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:26:04.075+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:26:04.106+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:26:04.109+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:26:04.128+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:26:04.128+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:26:04.145+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:26:04.144+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:26:04.175+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.107 seconds
+[2024-05-27T10:26:06.130+0000] {processor.py:161} INFO - Started process (PID=114) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:26:06.131+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:26:06.133+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:26:06.133+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:26:06.165+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:26:06.168+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:26:06.190+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:26:06.190+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:26:06.208+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:26:06.208+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:26:06.230+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.105 seconds
+[2024-05-27T10:26:36.475+0000] {processor.py:161} INFO - Started process (PID=123) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:26:36.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:26:36.478+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:26:36.477+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:26:36.492+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:26:36.495+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:26:36.516+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:26:36.515+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:26:36.533+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:26:36.533+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:26:36.551+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.081 seconds
+[2024-05-27T10:27:06.897+0000] {processor.py:161} INFO - Started process (PID=132) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:27:06.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:27:06.900+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:27:06.900+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:27:06.916+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:27:06.920+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:27:06.941+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:27:06.941+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:27:06.959+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:27:06.959+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:27:06.979+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.087 seconds
+[2024-05-27T10:27:37.225+0000] {processor.py:161} INFO - Started process (PID=141) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:27:37.226+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:27:37.228+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:27:37.228+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:27:37.254+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:27:37.258+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:27:37.279+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:27:37.279+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:27:37.298+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:27:37.298+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:27:37.318+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.097 seconds
+[2024-05-27T10:28:07.604+0000] {processor.py:161} INFO - Started process (PID=150) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:28:07.605+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:28:07.607+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:28:07.606+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:28:07.621+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:28:07.624+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:28:07.646+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:28:07.645+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:28:07.665+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:28:07.665+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:28:07.684+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.085 seconds
+[2024-05-27T10:28:37.951+0000] {processor.py:161} INFO - Started process (PID=159) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:28:37.952+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:28:37.954+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:28:37.954+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:28:37.967+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:28:37.970+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:28:37.991+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:28:37.990+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:28:38.008+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:28:38.008+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:28:38.027+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.080 seconds
+[2024-05-27T10:29:08.305+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:29:08.306+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:29:08.308+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:29:08.307+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:29:08.319+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:29:08.322+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:29:08.343+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:29:08.343+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:29:08.361+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:29:08.360+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:29:08.381+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.081 seconds
+[2024-05-27T10:29:38.642+0000] {processor.py:161} INFO - Started process (PID=177) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:29:38.643+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:29:38.645+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:29:38.645+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:29:38.657+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:29:38.659+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:29:38.679+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:29:38.679+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:29:38.697+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:29:38.697+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:29:38.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.080 seconds
+[2024-05-27T10:30:08.977+0000] {processor.py:161} INFO - Started process (PID=186) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:30:08.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:30:08.980+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:30:08.980+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:30:08.992+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:30:08.995+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:30:09.016+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:30:09.016+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:30:09.033+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:30:09.033+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:30:09.055+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.082 seconds
+[2024-05-27T10:30:39.324+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:30:39.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:30:39.327+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:30:39.327+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:30:39.347+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:30:39.350+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:30:39.372+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:30:39.372+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:30:39.390+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:30:39.390+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:30:39.409+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.090 seconds
+[2024-05-27T10:31:09.649+0000] {processor.py:161} INFO - Started process (PID=204) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:31:09.651+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:31:09.653+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:31:09.652+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:31:09.672+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:31:09.675+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:31:09.697+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:31:09.697+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:31:09.715+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:31:09.715+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:31:09.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.089 seconds
+[2024-05-27T10:31:40.009+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:31:40.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:31:40.012+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:31:40.012+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:31:40.035+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:31:40.038+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:31:40.060+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:31:40.060+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:31:40.076+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:31:40.076+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:31:40.098+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.094 seconds
+[2024-05-27T10:32:10.374+0000] {processor.py:161} INFO - Started process (PID=222) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:32:10.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:32:10.377+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:32:10.377+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:32:10.389+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:32:10.392+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:32:10.413+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:32:10.413+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:32:10.430+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:32:10.430+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:32:10.449+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.079 seconds
+[2024-05-27T10:32:40.774+0000] {processor.py:161} INFO - Started process (PID=231) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:32:40.775+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:32:40.776+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:32:40.776+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:32:40.788+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:32:40.791+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:32:40.812+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:32:40.812+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:32:40.829+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:32:40.829+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:32:40.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.081 seconds
+[2024-05-27T10:33:11.106+0000] {processor.py:161} INFO - Started process (PID=240) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:33:11.107+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:33:11.109+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:33:11.109+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:33:11.124+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:33:11.128+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:33:11.152+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:33:11.151+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:33:11.171+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:33:11.171+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:33:11.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.089 seconds
+[2024-05-27T10:33:41.457+0000] {processor.py:161} INFO - Started process (PID=249) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:33:41.458+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:33:41.460+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:33:41.459+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:33:41.488+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:33:41.491+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:33:41.512+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:33:41.512+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:33:41.529+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:33:41.529+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:33:41.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.097 seconds
+[2024-05-27T10:34:11.822+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:34:11.823+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:34:11.824+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:34:11.824+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:34:11.837+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:34:11.840+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:34:11.859+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:34:11.859+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:34:11.877+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:34:11.877+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:34:11.897+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.080 seconds
+[2024-05-27T10:34:42.150+0000] {processor.py:161} INFO - Started process (PID=267) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:34:42.151+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:34:42.153+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:34:42.153+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:34:42.167+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:34:42.170+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:34:42.190+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:34:42.190+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:34:42.207+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:34:42.207+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:34:42.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.080 seconds
+[2024-05-27T10:35:12.486+0000] {processor.py:161} INFO - Started process (PID=276) to work on /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:35:12.487+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dags_with_taskflow_api.py for tasks to queue
+[2024-05-27T10:35:12.489+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:35:12.489+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:35:12.506+0000] {logging_mixin.py:188} INFO - {{ task_instance.xcom_pull(task_ids='get_name', dag_id='taskflow_demo_v1', key='return_value') }} {{ task_instance.xcom_pull(task_ids='get_age', dag_id='taskflow_demo_v1', key='return_value') }}
+[2024-05-27T10:35:12.509+0000] {processor.py:840} INFO - DAG(s) 'taskflow_demo_v1' retrieved from /opt/airflow/dags/dags_with_taskflow_api.py
+[2024-05-27T10:35:12.530+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:35:12.530+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-27T10:35:12.549+0000] {logging_mixin.py:188} INFO - [2024-05-27T10:35:12.549+0000] {dag.py:3954} INFO - Setting next_dagrun for taskflow_demo_v1 to 2024-05-27 00:00:00+00:00, run_after=2024-05-28 00:00:00+00:00
+[2024-05-27T10:35:12.569+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dags_with_taskflow_api.py took 0.089 seconds
